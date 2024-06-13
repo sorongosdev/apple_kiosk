@@ -1,0 +1,452 @@
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+.landing-frame {
+  width: 1080px;
+  height: 1920px;
+  background-color: rgb(28, 36, 37);
+  background-image: url('images/ashe-bob.png');
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.frame {
+  width: 1080px;
+  height: 1920px;
+  background-image: url('images/alpha_hochi.png');
+  background-size: 15%;
+  background-repeat: repeat;
+  background-color: #1c1c1c;
+}
+
+.dim {
+  position: absolute;
+  width: 1080px;
+  height: 1920px;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  color: #999;
+  text-align: center;
+  /* background-color: rgba(189, 164, 23, 0.1); */
+}
+
+footer h3 {
+  padding: 3px;
+}
+
+footer p {
+  padding: 2px;
+}
+
+/* Landing page */
+.landing-vid {
+  position: absolute;
+  width: 1080px;
+  height: 1920px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.landing-main {
+  position: relative;
+  padding-top: 680px;
+  text-align: center;
+}
+
+.landing-main p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16pt;
+  padding-top: 600px;
+}
+
+/* Main Page */
+/* Header */
+.main-vid {
+  width: 1080px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.indicator {
+  text-align: center;
+}
+
+.main-headline {
+  font-family: "Noto Sans KR", sans-serif;
+  color: aliceblue;
+  text-align: center;
+}
+
+.main-headline h2 {
+  width: 300px;
+  font-size: 32pt;
+  font-weight: 500;
+  margin: 0 auto;
+  margin-top: 38px;
+  padding-top: 24px;
+  border-top: 1px solid #333;
+  text-shadow: 5px 5px 5px black;
+}
+
+.main-headline h3 {
+  font-size: 18pt;
+  font-weight: 200;
+  padding-top: 16px;
+  text-shadow: 5px 5px 5px black;
+}
+
+/* Navigation */
+main {
+  /* border: 1px dashed red; */
+}
+
+.main-section {
+  height: 360px;
+  margin-top: 36px;
+  background-size: 110%;
+  background-image: url('images/main_section_img.png');
+  background-repeat: no-repeat;
+  background-position: left top;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 100;
+  color: yellow;
+  text-shadow: 5px 5px 5px black;
+}
+
+.main-section p {
+  font-size: 16pt;
+  font-weight: 300;
+  padding: 40px 0 0 0;
+  text-align: center;
+}
+
+.main-nav {
+  width: 1020px;
+  margin: 0 auto;
+}
+
+.nav {
+  position: relative;
+  height: 300px;
+  box-sizing: border-box;
+  border: 2px solid #41412C;
+  border-radius: 32px;
+}
+
+.nav-1 {
+  position: relative;
+  width: 100%;
+  background-image: url('images/nav1_btn_img.png');
+  background-size: 105%;
+  background-position: center top 80%;
+  background-repeat: no-repeat;
+  /* 이미지 반복 없음 */
+}
+
+
+.nav-2 {
+  display: inline-block;
+  width: 500px;
+  margin: 0px 14px 0 0;
+  background-image: url('images/nav2_btn_img.png');
+  background-position: center left 10%;
+  background-size: cover;
+}
+
+.nav-3 {
+  display: inline-block;
+  width: 500px;
+  margin: 20px 0 0 0;
+  background-image: url('images/nav3_btn_img.png');
+  /* background-position: top 10%; */
+  background-size: 100%;
+  background-repeat: repeat;
+  /* background-size: ; */
+}
+
+.main-nav h2 {
+  position: absolute;
+  text-align: right;
+  width: 200px;
+  right: 20px;
+  bottom: 20px;
+  padding: 10px 20px;
+  color: white;
+  border-left: 2px solid wheat;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Sub Page */
+.sub-header {
+  /* border: 1px solid blue;
+  height: 608px;
+  margin-bottom: 5px; */
+}
+
+.sub1-header {
+  /* border: 1px solid blue; */
+  height: 608px;
+  margin-bottom: 5px;
+  background-image: url('images/sub1_header.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sub-header nav {
+  display: flex;
+  align-items: center;
+  padding: 10px 0 10px 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  /* border: 1px dashed greenyellow; */
+}
+
+.sub-header nav ul {
+  display: inline-block;
+  color: white;
+  /* border: 1px dashed orange; */
+}
+
+.sub-header nav ul li {
+  font-family: "Noto Sans KR", sans-serif;
+  display: inline;
+  padding: 0 80px;
+  font-size: 18pt;
+  text-shadow: 5px 5px 5px black;
+  /* border: 1px dashed blue; */
+}
+
+.nav-logo {
+  display: inline-block;
+  margin: 0 auto;
+  /* border: 1px dashed red; */
+}
+
+.sub-logo {
+  margin: 80px 0 0 0;
+  text-align: center;
+}
+
+.sub-section {
+  font-family: "Noto Sans KR", sans-serif;
+  text-align: center;
+  color: white;
+}
+
+.sub-section h1 {
+  font-size: 28pt;
+}
+
+.sub-section h2 {
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.sub-gallery {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+  /* border: 1px dashed orange; */
+}
+
+.arrow {
+  width: 20px;
+  padding: 320px 20px 320px 20px;
+  /* border: 1px dashed red; */
+}
+
+.gallery-img {
+  width: 100%;
+  height: inherit;
+  background-image: url('images/sub1_gallery1.png');
+  background-position: top;
+  background-size: 90%;
+  /* border: 1px dashed yellowgreen; */
+}
+
+
+/* sub2 */
+.sub2-header {
+  /* border: 1px solid red; */
+}
+
+.sub2-title {
+  margin: 80px 0 0 0;
+  text-align: right;
+  padding-right: 20%;
+  /* border: 1px solid red; */
+}
+
+.sub2-section-left {
+  /* border: 1px solid yellow; */
+  width: 60%;
+  height: 999px;
+  background-image: url('images/half_cooked_buldak.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sub2-section-right {
+  height: 1000px;
+  width: 49%;
+  /* border: 1px solid green; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* height: 100%; */
+}
+
+.sub2-section-left,
+.sub2-section-right {
+  display: inline-block;
+  /* display: flex; */
+}
+
+
+/* animation */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sub2-item1,
+.sub2-item2,
+.sub2-item3 {
+  opacity: 0;
+  animation: fadeInDown 1.5s ease-out forwards;
+  /* 애니메이션 적용 */
+}
+
+.sub2-item1 {
+  background-position: right;
+  width: 540px;
+  height: 333px;
+  background-size: 55%;
+  background-repeat: no-repeat;
+  background-image: url('images/jajaroni.png');
+  animation-delay: 0.5s;
+}
+
+.sub2-item2 {
+  background-position: right;
+  width: 540px;
+  height: 333px;
+  background-size: 55%;
+  background-repeat: no-repeat;
+  background-image: url('images/buldak_tteokboki.png');
+  animation-delay: 1s;
+
+}
+
+.sub2-item3 {
+  background-position: right;
+  width: 540px;
+  height: 333px;
+  background-size: 55%;
+  background-repeat: no-repeat;
+  background-image: url('images/ganjjam_img.png');
+  animation-delay: 1.5s;
+}
+
+.sub2-container {
+  display: flex;
+  font-weight: 300;
+}
+
+.sub2-container h2 {
+  /* font-family: "Jua", sans-serif; */
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 800;
+  color: white;
+  font-size: 30pt;
+  letter-spacing: 10px;
+  text-shadow: 5px 5px 5px #1c1c1c;
+
+}
+
+.sub2-container h3 {
+  position: relative;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 600;
+  color: yellow;
+  font-size: 20pt;
+  letter-spacing: 5px;
+  left: 30px;
+  margin-top: 12px;
+  text-shadow: 3px 3px 3px #1c1c1c;
+
+}
+
+.frame2 {
+  width: 1080px;
+  height: 1920px;
+  background-image: url('images/fire.png');
+  background-size: 300%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sub2-bottom {
+  text-align: center;
+  animation: shake 1s ease-in-out infinite;
+  /* 0.5초 동안 무한 반복 */
+}
+
+/* 흔들리는 애니메이션 정의 */
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-10px) translateY(10px);
+  }
+
+  50% {
+    transform: translateX(10px) translateY(10px);
+  }
+
+  75% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}

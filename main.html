@@ -1,9 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
+    <title>Kiosk Main Page</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
-  <body></body>
+
+  <body>
+    <div class="frame">
+      <header>
+        <video class="main-vid" autoplay muted loop>
+          <source src="videos/buldak_main.mp4" type="video/mp4" />
+        </video>
+
+        <div class="indicator">
+          <img class="indicator" src="images/main-indicator.png" />
+        </div>
+
+        <div class="main-headline">
+          <h2>
+            얼어붙은 일상의 <br />
+            매콤한 반전!
+          </h2>
+          <h3>매운 맛으로 풀어버리고, 재미있게 아이스 브레이킹 하자!</h3>
+        </div>
+      </header>
+
+      <main>
+        <section class="main-section">
+          <p>"Buldak is the ice-breaker, the spice-breaker"</p>
+        </section>
+
+        <nav class="main-nav">
+          <a href="sub1.html">
+            <div class="nav-1 nav"></div>
+          </a>
+
+          <div class="nav-2 nav">
+            <a href="sub2.html">
+              <div class="nav-2 nav"></div>
+            </a>
+          </div>
+
+          <div class="nav-3 nav">
+            <!-- <a href="sub3.html">
+                        <div class="nav-2 nav"></div>
+                    </a> -->
+          </div>
+        </nav>
+      </main>
+
+      <footer>
+        <h3>Kiosk Footer Area</h3>
+        <p>Copyright 2024, Kiosk Media Interaction Content</p>
+      </footer>
+    </div>
+  </body>
 </html>
