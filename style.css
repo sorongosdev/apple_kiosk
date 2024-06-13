@@ -1,4 +1,25 @@
 /* Global */
+@font-face {
+  font-family: 'AppleSDGothicNeoEB';
+  src: url('./fonts/AppleSDGothicNeoEB.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AppleSDGothicNeoH';
+  src: url('./fonts/AppleSDGothicNeoH.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AppleSDGothicNeoL';
+  src: url('./fonts/AppleSDGothicNeoL.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -80,7 +101,8 @@ footer p {
 }
 
 .landing-main p {
-  font-family: "Noto Sans KR", sans-serif;
+  /* font-family: "Noto Sans KR", sans-serif; */
+  font-family: "AppleSDGothicNeoL", sans-serif;
   font-size: 40pt;
   /* border: 1px solid blue; */
 
