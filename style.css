@@ -37,7 +37,7 @@ ul {
 }
 
 .dim {
-  position: absolute;
+  position: relative;
   width: 1080px;
   height: 1920px;
   top: 0;
@@ -74,14 +74,16 @@ footer p {
 
 .landing-main {
   position: relative;
-  padding-top: 680px;
+  top: 80%;
   text-align: center;
+  /* border: 1px solid red; */
 }
 
 .landing-main p {
   font-family: "Noto Sans KR", sans-serif;
-  font-size: 16pt;
-  padding-top: 600px;
+  font-size: 40pt;
+  /* border: 1px solid blue; */
+
 }
 
 /* Main Page */
