@@ -57,13 +57,15 @@ ul {
   background-color: #1c1c1c;
 }
 
-.dim {
+.main-top-nav {
   position: relative;
-  width: 1080px;
-  height: 1920px;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid red;
+}
+
+.main-top-nav i {
+  color: white;
+  width: 54px;
+  height: 54px;
 }
 
 footer {
