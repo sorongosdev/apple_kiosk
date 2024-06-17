@@ -1,0 +1,87 @@
+/* sub-page */
+.sub-frame {
+  border: 1px solid red;
+  width: 1080px;
+  height: 1920px;
+}
+
+.sub-header {
+  border: 5px solid red;
+  width: 1080px;
+  height: 150px;
+}
+
+.sub-btn-section {
+  border: 1px solid blue;
+  width: 1080px;
+  height: calc(1920px - 150px);
+}
+
+.sub-top-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 42px;
+  border: 1px solid green;
+  width: 1080px;
+  height: 441px;
+}
+
+.sub-than-m2-btn {
+  height: 441px;
+  width: 952px;
+  border: 1px solid magenta;
+}
+
+.sub-middle-container {
+  margin-top: 31px;
+  border: 1px solid orange;
+  width: 1080px;
+  height: 898px;
+  display: flex;
+  justify-content: center;
+}
+
+.sub-tracing-btn {
+  border: 1px solid sienna;
+  width: 585px;
+  height: 898px;
+}
+
+.sub-middle-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 31px;
+  border: 1px solid rgb(68, 0, 255);
+  width: 335px;
+  height: 898px;
+}
+
+.sub-m4-btn {
+  border: 1px solid rgb(68, 0, 255);
+  width: 300px;
+  height: 300px;
+}
+
+.sub-oled-btn {
+  margin-top: 32px;
+  border: 1px solid rgb(68, 0, 255);
+  width: 335px;
+  height: 566px;
+}
+
+.sub-bottom-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  border: 1px solid magenta;
+  width: 1080px;
+  height: 262px;
+}
+
+.sub-3nm-btn {
+  border: 1px solid rgb(68, 0, 255);
+  height: 262px;
+  width: 952px;
+}
