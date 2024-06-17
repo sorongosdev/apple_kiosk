@@ -98,6 +98,13 @@
   border: 1px solid sienna;
   width: 585px;
   height: 898px;
+  font-size: 56px;
+}
+
+.sub-tracing-txt {
+  border: 1px solid red;
+  height: 240px;
+  margin: 40px;
 }
 
 .sub-middle-column {
@@ -115,6 +122,13 @@
   border: 1px solid rgb(68, 0, 255);
   width: 300px;
   height: 300px;
+  font-size: 80px;
+  text-align: center;
+  line-height: 300px;
+}
+
+.sub-m4-btn span {
+  border: 1px solid red;
 }
 
 .sub-oled-btn {
@@ -122,6 +136,15 @@
   border: 1px solid rgb(68, 0, 255);
   width: 335px;
   height: 566px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-oled-txt {
+  font-size: 40px;
+  text-align: center;
+  border: 1px solid red;
 }
 
 .sub-bottom-container {
