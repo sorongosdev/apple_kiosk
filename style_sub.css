@@ -10,7 +10,7 @@
 .sub-frame {
   color: white;
   font-family: "AppleSDGothicNeoEB";
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 1080px;
   height: 1920px;
   background: linear-gradient(
@@ -29,18 +29,23 @@
 }
 
 .sub-header-container {
-  border: 5px solid red;
+  /* border: 5px solid red; */
   width: 1080px;
   height: 150px;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+}
+
+.sub-header-container hr {
+  height: 70px;
 }
 
 .sub-header-container span {
   width: 200px;
   height: 150px;
   font-size: 32px;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   text-align: center;
   line-height: 150px;
   display: flex;
@@ -49,12 +54,12 @@
 }
 
 .sub-header-logo {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: block;
 }
 
 .sub-btn-section {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   width: 1080px;
   height: calc(1920px - 150px);
 }
@@ -68,7 +73,7 @@
   display: flex;
   justify-content: center;
   margin-top: 42px;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   width: 1080px;
   height: 441px;
 }
@@ -76,19 +81,19 @@
 .sub-compare-btn {
   height: 441px;
   width: 952px;
-  border: 1px solid magenta;
+  /* border: 1px solid magenta; */
   background-color: black;
 }
 
 .sub-upto-txt {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin-top: 32px;
   font-size: 36px;
   text-align: center;
 }
 
 .sub-spec-container {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   height: 191px;
   margin-top: 38px;
   display: flex;
@@ -96,13 +101,13 @@
 }
 
 .sub-spec-col {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 300px;
   position: relative;
 }
 
 .sub-spec-grad-txt {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   height: 80%;
   font-size: 110px;
   text-align: center;
@@ -112,14 +117,14 @@
 }
 
 .sub-spec-desc-txt {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   height: 19%;
   font-size: 23px;
   text-align: center;
 }
 
 .sub-than-m2-txt {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   text-align: center;
   margin-top: 48px;
   font-size: 36px;
@@ -127,7 +132,7 @@
 
 .sub-middle-container {
   margin-top: 31px;
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
   width: 1080px;
   height: 898px;
   display: flex;
@@ -135,7 +140,7 @@
 }
 
 .sub-tracing-btn {
-  border: 1px solid sienna;
+  /* border: 1px solid sienna; */
   width: 585px;
   height: 898px;
   font-size: 56px;
@@ -148,7 +153,7 @@
 }
 
 .sub-tracing-txt {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 240px;
   margin: 40px;
 }
@@ -159,7 +164,7 @@
   justify-content: center;
   align-items: center;
   margin-left: 31px;
-  border: 1px solid rgb(68, 0, 255);
+  /* border: 1px solid rgb(68, 0, 255); */
   width: 335px;
   height: 898px;
 }
@@ -187,13 +192,13 @@
 }
 
 .sub-m4-btn span {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .sub-oled-btn {
   position: relative;
   margin-top: 32px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 335px;
   height: 566px;
   display: flex;
@@ -209,20 +214,20 @@
 .sub-oled-txt {
   font-size: 40px;
   text-align: center;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .sub-bottom-container {
   display: flex;
   justify-content: center;
   margin-top: 32px;
-  border: 1px solid magenta;
+  /* border: 1px solid magenta; */
   width: 1080px;
   height: 262px;
 }
 
 .sub-3nm-btn {
-  border: 1px solid rgb(68, 0, 255);
+  /* border: 1px solid rgb(68, 0, 255); */
   height: 262px;
   width: 952px;
   display: flex;
