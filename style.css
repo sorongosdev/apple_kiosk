@@ -234,7 +234,7 @@
   }
     
     
-  .flexcontainer-2{
+  .P-flexcontainer{
       position: absolute;
       width: 568px;
       height: 202px;
@@ -257,219 +257,243 @@
       line-height: 60px;
   }
     
-  .pencil-big-title {
-      position: absolute;
-      top: 0;
-      left: 0;
-      font-family: "AppleSDGothicNeoEB";
-      font-weight: 400;
-      color: #ffffff;
-      font-size: 86px;
-      letter-spacing: 0;
-      line-height: 80px;
-      white-space: nowrap;
-  }
-    
-    .main .image {
-      position: absolute;
-      width: 604px;
-      height: 481px;
-      top: 424px;
-      left: 206px;
-      object-fit: cover;
-    }
-    
-  .MAIN-NAV {
-      position: absolute;
-      width: 1080px;
-      height: 150px;
-      top: 0;
-      left: 0;
-  }
-    
-  .group-wrapper {
-    height: 140px;
-  }
-    
-  .group {
-      position: relative;
-      width: 1018px;
-      height: 75px;
-      top: 39px;
-      left: 32px;
-  }
-    
-  .icon-ionicons {
-      position: absolute; width: 62px;
-      height: 70px;
-      top: 1px;
-      left: 0;
-  }
-    
-  .solar-figma-bold {
-      position: absolute;
-      width: 62px;
-      height: 62px;
-      top: 5px;
-      left: 954px;
-  }
-    
-  .text-wrapper-2 {
+.pencil-big-title {
     position: absolute;
-    height: 75px;
-    top: 10px;
-    left: 86px;
-    font-family:"AppleSDGothicNeoEB00";
+    top: 0;
+    left: 0;
+    font-family: "AppleSDGothicNeoEB";
+    font-weight: 400;
     color: #ffffff;
-    font-size: 52px;
+    font-size: 86px;
     letter-spacing: 0;
-    line-height: normal;
+    line-height: 80px;
+    white-space: nowrap;
   }
     
-  .mask-group {
-      position: absolute;
-      width: 486px;
-      height: 296px;
-      top: 4px;
-      left: 198px;
-  }
+.carousel_pencil {
+    position: absolute;
+    width: 604px;
+    height: 481px;
+    top: 424px;
+    left: 206px;
+    object-fit: cover;
+}
     
-  .rectangle {
-      position: absolute;
-      width: 684px;
-      height: 300px;
-      top: 0;
-      left: 0;
-  }
+.MAIN-NAV {
+    position: absolute;
+    width: 1080px;
+    height: 150px;
+    top: 0;
+    left: 0;
+}
     
-  .overlap-2 {
-      position: absolute;
-      width: 1046px;
-      height: 687px;
-      top: 0;
-      left: 0;
-  }
+.group-wrapper {
+    height: 140px;
+}
     
-  .MAIN-NAV {
-      position: absolute;
-      width: 1080px;
-      height: 150px;
-      top: 0;
-      left: 0;
-  }
+.group {
+    position: relative;
+    width: 1018px;
+    height: 75px;
+    top: 39px;
+    left: 32px;
+}
     
-  .group-wrapper {
-      height: 140px;
-  }
+.icon-ionicons {
+    position: absolute; width: 62px;
+    height: 70px;
+    top: 1px;
+    left: 0;
+}
+
+.solar-figma-bold {
+    position: absolute;
+    width: 62px;
+    height: 62px;
+    top: 5px;
+    left: 954px;
+}
+
+.text-wrapper-2 {
+position: absolute;
+height: 75px;
+top: 10px;
+left: 86px;
+font-family:"AppleSDGothicNeoEB00";
+color: #ffffff;
+font-size: 52px;
+letter-spacing: 0;
+line-height: normal;
+}
+
+.mask-group {
+    position: absolute;
+    width: 486px;
+    height: 296px;
+    top: 4px;
+    left: 198px;
+}
+
+.rectangle {
+    position: absolute;
+    width: 684px;
+    height: 300px;
+    top: 0;
+    left: 0;
+}
+
+.overlap-2 {
+    position: absolute;
+    width: 1046px;
+    height: 687px;
+    top: 0;
+    left: 0;
+}
+
+.MAIN-NAV {
+    position: absolute;
+    width: 1080px;
+    height: 150px;
+    top: 0;
+    left: 0;
+}
+
+.group-wrapper {
+    height: 140px;
+}
+
+.group {
+    position: relative;
+    width: 1034px;
+    height: 70px;
+    top: 40px;
+    left: 24px;
+}
+
+.icon-ionicons {
+    position: absolute;
+    width: 62px;
+    height: 70px;
+    top: 0;
+    left: 0;
+}
+
+.solar-figma-bold {
+    position: absolute;
+    width: 62px;
+    height: 62px;
+    top: 5px;
+    left: 954px;
+}
+
+/* 2 */
+
+
+.carousel_speaker{
+    position: absolute; 
+    width: 604px;
+    height: 499px;
+    top: 398px;
+    left: 206px;
+    object-fit: cover;
+}
+
+.speaker-box {
+    position: absolute;
+    width: 802px;
+    height: 338px;
+    top: 40px;
+    left: 109px;
+}
     
-  .group {
-      position: relative;
-      width: 1034px;
-      height: 70px;
-      top: 40px;
-      left: 24px;
-  }
-  
-  .icon-ionicons {
-      position: absolute;
-      width: 62px;
-      height: 70px;
-      top: 0;
-      left: 0;
-  }
+.S-flexcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    position: absolute;
+    width: 798px;
+    height: 202px;
+    top: 136px;
+    left: 0;
+}
+
+.S-flexcontainer .text {
+    position: relative;
+    align-self: stretch;
+    font-family: "AppleSDGothicNeoB";
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 40px;
+    text-align: center;
+    line-height: 60px;
+}
     
-  .solar-figma-bold {
-      position: absolute;
-      width: 62px;
-      height: 62px;
-      top: 5px;
-      left: 954px;
-  }
+.S-flexcontainer .text-wrapper {
+    font-family: "AppleSDGothicNeoB";
+    color: #ffffff;
+    font-size: 40px;
+    letter-spacing: 0;
+    line-height: 60px;
+ }
 
-/* sub-page */
-.sub-frame {
-  border: 1px solid red;
-  width: 1080px;
-  height: 1920px;
+ .speaker-big-title {
+    position: absolute;
+    top: 0;
+    left: 83px;
+    font-family: "AppleSDGothicNeoEB";
+    color: #ffffff;
+    font-size: 86px;
+ }
+
+
+ /* 3*/
+
+ 
+.m-flexcontainer { 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    position: absolute;
+    width: 585px;
+    height: 202px;
+    top: 175px;
+    left: 316px;
 }
 
-.sub-header {
-  border: 5px solid red;
-  width: 1080px;
-  height: 150px;
+.m-flexcontainer .text {
+    position: relative; 
+    align-self: stretch;
+    font-family:"AppleSDGothicNeoB";
+    color: #ffffff;
+    font-size: 40px;
+    text-align: right;
+    letter-spacing: 0;
+    line-height: 60px;
 }
 
-.sub-btn-section {
-  border: 1px solid blue;
-  width: 1080px;
-  height: calc(1920px - 150px);
+.m-flexcontainer .text-wrapper {
+    font-family: "AppleSDGothicNeoB00";
+    line-height: 60px;
+
 }
 
-.sub-top-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 42px;
-  border: 1px solid green;
-  width: 1080px;
-  height: 441px;
+.m4-big-title {
+    position: absolute;
+    top: 39px;
+    left: 391px;
+    font-family: "AppleSDGothicNeoEB00";
+    color: #ffffff;
+    font-size: 86px;
 }
 
-.sub-than-m2-btn {
-  height: 441px;
-  width: 952px;
-  border: 1px solid magenta;
-}
+.carousel_m4 {
+    position: absolute;
+    width: 767px;
+    height: 418px;
+    top: 479px;
+    left: 115px;
+    object-fit: cover;
 
-.sub-middle-container {
-  margin-top: 31px;
-  border: 1px solid orange;
-  width: 1080px;
-  height: 898px;
-  display: flex;
-  justify-content: center;
-}
-
-.sub-tracing-btn {
-  border: 1px solid sienna;
-  width: 585px;
-  height: 898px;
-}
-
-.sub-middle-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-left: 31px;
-  border: 1px solid rgb(68, 0, 255);
-  width: 335px;
-  height: 898px;
-}
-
-.sub-m4-btn {
-  border: 1px solid rgb(68, 0, 255);
-  width: 300px;
-  height: 300px;
-}
-
-.sub-oled-btn {
-  margin-top: 32px;
-  border: 1px solid rgb(68, 0, 255);
-  width: 335px;
-  height: 566px;
-}
-
-.sub-bottom-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 32px;
-  border: 1px solid magenta;
-  width: 1080px;
-  height: 262px;
-}
-
-.sub-3nm-btn {
-  border: 1px solid rgb(68, 0, 255);
-  height: 262px;
-  width: 952px;
 }
