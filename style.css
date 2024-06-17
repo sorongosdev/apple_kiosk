@@ -497,3 +497,59 @@ line-height: normal;
     object-fit: cover;
 
 }
+
+
+/* 4 */
+
+.workflow-box {
+    position: absolute;
+    width: 600px;
+    height: 339px;
+    top: 40px;
+    left: 99px;
+}
+
+.Sm-flexcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    position: absolute;
+    width: 596px;
+    height: 202px;
+    top: 137px;
+    left: 0;
+}
+
+.Sm-flexcontaine .text {
+    position: relative;
+    font-family: "AppleSDGothicNeoB";
+    font-size: 40px;
+    line-height: 60px;
+    color: #ffffff;
+
+}
+
+.Sm-flexcontaine .text-wrapper {
+    font-family: "AppleSDGothicNeoB";
+    line-height: 60px;
+
+}
+
+.Sm-big-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: "AppleSDGothicNeoEB";
+    font-size: 86px;
+    color: #ffffff;
+}
+
+.carousel_stage {
+    position: absolute;
+    width: 586px;
+    height: 460px;
+    top: 437px;
+    left: 331px;
+    object-fit: cover;
+}
