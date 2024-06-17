@@ -35,357 +35,356 @@
 }
 
 
+
 * {
-  margin: 0;
-  padding: 0;
-}
-
-/* main */
-.main {
-    background-color: rgba(255, 255, 255, 1);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 1080px;
-    height: 1920px;
-}
-
-.div {
-    background-color: rgba(255, 255, 255, 1);
-    background: var(--Mainbackground, linear-gradient(0deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%), linear-gradient(24deg, #000 20.4%, rgba(17, 13, 40, 0.50) 60.2%, #333 100%), linear-gradient(335deg, #000 23.77%, rgba(17, 13, 40, 0.50) 61.89%, #333 100%), #FFF);
-    width: 1080px;
-    height: 1920px;
-    position: relative;
-}
-
-.sub-btn-box {
-    position: absolute;
-    width: 1016px;
-    height: 654px;
-    top: 1199px;
-    left: 32px;
-}
-  
-.event-box {
-    position: absolute;
-    width: 686px;
-    height: 300px;
-    top: 354px;
-    left: 332px;
-}
-  
-.overlap {
-    position: relative;
-    width: 684px;
-    height: 300px;
-}
-  
-  
-.sub-event-img {
-    position: relative;
-    width: 684px;
-    height: 300px;
-    background-image: url(./images/sub_event_img.svg);
-    background-size: 100% 100%;
-}
-  
-.img .overlap-group {
-    position: relative;
-    height: 300px;
-}
-
-.rectangle {
-    position: absolute;
-    width: 684px;
-    height: 300px;
-    top: 0;
-    left: 0;
-}
-
-.event-text {
-    position: absolute;
-    top: 232px;
-    left: 36px;
-    font-family: "AppleSDGothicNeoL";
-    font-weight: 400;
-    color: #ffffff;
-    font-size: 40px;
-    text-align: right;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.pencil-box {
-    position: absolute;
-    width: 302px;
-    height: 653px;
-    top: 0;
-    left: 0;
-    box-shadow: 10px 10px 16px #00000040;
-}
-
-.flexcontainer-wrapper{
-    width: 300px;
-    height: 656px;
-    background-image: url(images/sub_img_pencil.png);
-    background-size: 100% 100%;
-}
-
-.flexcontainer {
-    position: relative;
-    width: 98px;
-    height: 113px;
-    top: 16px;
-    left: 24px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 11px;
-}
-
-.text {
-    position: relative;
-    font-family: "AppleSDGothicNeoL";
-    font-weight: 400;
-    color: #ffffffb2;
-    font-size: 40px;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.text-wrapper {
-    
-    color: #ffffff;
-    font-size: 40px;
-    letter-spacing: 0;
-}
-
-.box {
-    position: absolute;
-    width: 362px;
-    height: 362px;
-    top: 0;
-    left: 684px;
-}
-
-.m4-box{
-    width: 329.998px;
-    height: 330px;
-    background-image: url(images/sub_m4_img.svg);
-    background-repeat: no-repeat;
-    
-}
-
-.stage-box {
-    position: absolute;
-    width: 330px;
-    height: 330px;
-    top: 0px;
-    left: 324px;
-}
-
-.stage-text{
-    position: absolute;
-    color: #ffffffb2;
-    text-align: center;
-    font-family: "AppleSDGothicNeoL";
-    font-size: 40px;
-    bottom: 0;
-    right: 0;
-}
-
-.indicator {
-    position: absolute;
-    width: 100%;
-    top: 1103px;
-    text-align: center;
-}
-
-
-.dot {
-    display: inline-block;
-    background-color: #F2EEFF;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    opacity: 0.5;
-}
-
-.active{
-    opacity: 1;
-  }
-
-.window {
-    position: absolute;
-    width: 1016px;
-    height: 937px;
-    top: 150px;
-    left: 32px;
-    border-radius: 52px;
-}
-  
- .main-pencil-box {
-    position: absolute;
-    width: 667px;
-    height: 320px;
-    top: 48px;
-    left: 68px;
-}
-  
-  
-.flexcontainer-2{
-    position: absolute;
-    width: 568px;
-    height: 202px;
-    top: 118px;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    align-items : flex-start;
-    gap: 20px;
-}
-  
-
-  
-.span {
-    font-family: "AppleSDGothicNeoB";
-
-    color: #ffffff;
-    font-size: 40px;
-    letter-spacing: 0;
-    line-height: 60px;
-}
-  
-.pencil-big-title {
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-family: "AppleSDGothicNeoEB";
-    font-weight: 400;
-    color: #ffffff;
-    font-size: 86px;
-    letter-spacing: 0;
-    line-height: 80px;
-    white-space: nowrap;
-}
-  
-  .main .image {
-    position: absolute;
-    width: 604px;
-    height: 481px;
-    top: 424px;
-    left: 206px;
-    object-fit: cover;
+    margin: 0;
+    padding: 0;
   }
   
-.MAIN-NAV {
-    position: absolute;
-    width: 1080px;
-    height: 150px;
-    top: 0;
-    left: 0;
-}
+  /* main */
+  .main {
+      background-color: rgba(255, 255, 255, 1);
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 1080px;
+      height: 1920px;
+  }
   
-.group-wrapper {
-  height: 140px;
-}
+  .div {
+      background-color: rgba(255, 255, 255, 1);
+      background: var(--Mainbackground, linear-gradient(0deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%), linear-gradient(24deg, #000 20.4%, rgba(17, 13, 40, 0.50) 60.2%, #333 100%), linear-gradient(335deg, #000 23.77%, rgba(17, 13, 40, 0.50) 61.89%, #333 100%), #FFF);
+      width: 1080px;
+      height: 1920px;
+      position: relative;
+  }
   
-.group {
-    position: relative;
-    width: 1018px;
-    height: 75px;
-    top: 39px;
-    left: 32px;
-}
+  .sub-btn-box {
+      position: absolute;
+      width: 1016px;
+      height: 654px;
+      top: 1199px;
+      left: 32px;
+  }
+    
+  .event-box {
+      position: absolute;
+      width: 686px;
+      height: 300px;
+      top: 354px;
+      left: 332px;
+  }
+    
+  .overlap {
+      position: relative;
+      width: 684px;
+      height: 300px;
+  }
+    
+    
+  .sub-event-img {
+      position: relative;
+      width: 684px;
+      height: 300px;
+      background-image: url(./images/sub_event_img.svg);
+      background-size: 100% 100%;
+  }
+    
+  .img .overlap-group {
+      position: relative;
+      height: 300px;
+  }
   
-.icon-ionicons {
-    position: absolute; width: 62px;
-    height: 70px;
-    top: 1px;
-    left: 0;
-}
+  .rectangle {
+      position: absolute;
+      width: 684px;
+      height: 300px;
+      top: 0;
+      left: 0;
+  }
   
-.solar-figma-bold {
-    position: absolute;
-    width: 62px;
-    height: 62px;
-    top: 5px;
-    left: 954px;
-}
+  .event-text {
+      position: absolute;
+      top: 232px;
+      left: 36px;
+      font-family: "AppleSDGothicNeoL";
+      font-weight: 400;
+      color: #ffffff;
+      font-size: 40px;
+      text-align: right;
+      letter-spacing: 0;
+      line-height: normal;
+  }
   
-.text-wrapper-2 {
-  position: absolute;
-  height: 75px;
-  top: 10px;
-  left: 86px;
-  font-family:"AppleSDGothicNeoEB00";
-  color: #ffffff;
-  font-size: 52px;
-  letter-spacing: 0;
-  line-height: normal;
-}
+  .pencil-box {
+      position: absolute;
+      width: 302px;
+      height: 653px;
+      top: 0;
+      left: 0;
+      box-shadow: 10px 10px 16px #00000040;
+  }
   
-.mask-group {
-    position: absolute;
-    width: 486px;
-    height: 296px;
-    top: 4px;
-    left: 198px;
-}
+  .flexcontainer-wrapper{
+      width: 300px;
+      height: 656px;
+      background-image: url(images/sub_img_pencil.png);
+      background-size: 100% 100%;
+  }
   
-.rectangle {
-    position: absolute;
-    width: 684px;
-    height: 300px;
-    top: 0;
-    left: 0;
-}
+  .flexcontainer {
+      position: relative;
+      width: 98px;
+      height: 113px;
+      top: 16px;
+      left: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 11px;
+  }
   
-.overlap-2 {
-    position: absolute;
-    width: 1046px;
-    height: 687px;
-    top: 0;
-    left: 0;
-}
+  .text {
+      position: relative;
+      font-family: "AppleSDGothicNeoL";
+      font-weight: 400;
+      color: #ffffffb2;
+      font-size: 40px;
+      letter-spacing: 0;
+      line-height: normal;
+  }
   
-.MAIN-NAV {
-    position: absolute;
-    width: 1080px;
-    height: 150px;
-    top: 0;
-    left: 0;
-}
+  .text-wrapper {
+      
+      color: #ffffff;
+      font-size: 40px;
+      letter-spacing: 0;
+  }
   
-.group-wrapper {
+  .box {
+      position: absolute;
+      width: 362px;
+      height: 362px;
+      top: 0;
+      left: 684px;
+  }
+  
+  .m4-box{
+      width: 329.998px;
+      height: 330px;
+      background-image: url(images/sub_m4_img.svg);
+      background-repeat: no-repeat;
+      
+  }
+  
+  .stage-box {
+      position: absolute;
+      width: 330px;
+      height: 330px;
+      top: 0px;
+      left: 324px;
+  }
+  
+  .stage-text{
+      position: absolute;
+      color: #ffffffb2;
+      text-align: center;
+      font-family: "AppleSDGothicNeoL";
+      font-size: 40px;
+      bottom: 0;
+      right: 0;
+  }
+  
+  .indicator {
+      position: absolute;
+      width: 100%;
+      top: 1103px;
+      text-align: center;
+  }
+  
+  
+  .dot {
+      display: inline-block;
+      background-color: #F2EEFF;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      opacity: 0.5;
+  }
+  
+  .active{
+      opacity: 1;
+    }
+  
+  .window {
+      position: absolute;
+      width: 1016px;
+      height: 937px;
+      top: 150px;
+      left: 32px;
+      border-radius: 52px;
+  }
+    
+   .main-pencil-box {
+      position: absolute;
+      width: 667px;
+      height: 320px;
+      top: 48px;
+      left: 68px;
+  }
+    
+    
+  .flexcontainer-2{
+      position: absolute;
+      width: 568px;
+      height: 202px;
+      top: 118px;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items : flex-start;
+      gap: 20px;
+  }
+    
+  
+    
+  .span {
+      font-family: "AppleSDGothicNeoB";
+  
+      color: #ffffff;
+      font-size: 40px;
+      letter-spacing: 0;
+      line-height: 60px;
+  }
+    
+  .pencil-big-title {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-family: "AppleSDGothicNeoEB";
+      font-weight: 400;
+      color: #ffffff;
+      font-size: 86px;
+      letter-spacing: 0;
+      line-height: 80px;
+      white-space: nowrap;
+  }
+    
+    .main .image {
+      position: absolute;
+      width: 604px;
+      height: 481px;
+      top: 424px;
+      left: 206px;
+      object-fit: cover;
+    }
+    
+  .MAIN-NAV {
+      position: absolute;
+      width: 1080px;
+      height: 150px;
+      top: 0;
+      left: 0;
+  }
+    
+  .group-wrapper {
     height: 140px;
-}
-  
-.group {
-    position: relative;
-    width: 1034px;
-    height: 70px;
-    top: 40px;
-    left: 24px;
-}
-
-.icon-ionicons {
+  }
+    
+  .group {
+      position: relative;
+      width: 1018px;
+      height: 75px;
+      top: 39px;
+      left: 32px;
+  }
+    
+  .icon-ionicons {
+      position: absolute; width: 62px;
+      height: 70px;
+      top: 1px;
+      left: 0;
+  }
+    
+  .solar-figma-bold {
+      position: absolute;
+      width: 62px;
+      height: 62px;
+      top: 5px;
+      left: 954px;
+  }
+    
+  .text-wrapper-2 {
     position: absolute;
-    width: 62px;
-    height: 70px;
-    top: 0;
-    left: 0;
-}
+    height: 75px;
+    top: 10px;
+    left: 86px;
+    font-family:"AppleSDGothicNeoEB00";
+    color: #ffffff;
+    font-size: 52px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+    
+  .mask-group {
+      position: absolute;
+      width: 486px;
+      height: 296px;
+      top: 4px;
+      left: 198px;
+  }
+    
+  .rectangle {
+      position: absolute;
+      width: 684px;
+      height: 300px;
+      top: 0;
+      left: 0;
+  }
+    
+  .overlap-2 {
+      position: absolute;
+      width: 1046px;
+      height: 687px;
+      top: 0;
+      left: 0;
+  }
+    
+  .MAIN-NAV {
+      position: absolute;
+      width: 1080px;
+      height: 150px;
+      top: 0;
+      left: 0;
+  }
+    
+  .group-wrapper {
+      height: 140px;
+  }
+    
+  .group {
+      position: relative;
+      width: 1034px;
+      height: 70px;
+      top: 40px;
+      left: 24px;
+  }
   
-.solar-figma-bold {
-    position: absolute;
-    width: 62px;
-    height: 62px;
-    top: 5px;
-    left: 954px;
-}
-  
-
+  .icon-ionicons {
+      position: absolute;
+      width: 62px;
+      height: 70px;
+      top: 0;
+      left: 0;
+  }
+    
+  .solar-figma-bold {
+      position: absolute;
+      width: 62px;
+      height: 62px;
+      top: 5px;
+      left: 954px;
+  }
 
 /* sub-page */
 .sub-frame {
@@ -395,13 +394,82 @@
 }
 
 .sub-header {
-  border: 1px solid red;
+  border: 5px solid red;
   width: 1080px;
   height: 150px;
 }
 
-.sub-section {
+.sub-btn-section {
   border: 1px solid blue;
   width: 1080px;
   height: calc(1920px - 150px);
+}
+
+.sub-top-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 42px;
+  border: 1px solid green;
+  width: 1080px;
+  height: 441px;
+}
+
+.sub-than-m2-btn {
+  height: 441px;
+  width: 952px;
+  border: 1px solid magenta;
+}
+
+.sub-middle-container {
+  margin-top: 31px;
+  border: 1px solid orange;
+  width: 1080px;
+  height: 898px;
+  display: flex;
+  justify-content: center;
+}
+
+.sub-tracing-btn {
+  border: 1px solid sienna;
+  width: 585px;
+  height: 898px;
+}
+
+.sub-middle-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 31px;
+  border: 1px solid rgb(68, 0, 255);
+  width: 335px;
+  height: 898px;
+}
+
+.sub-m4-btn {
+  border: 1px solid rgb(68, 0, 255);
+  width: 300px;
+  height: 300px;
+}
+
+.sub-oled-btn {
+  margin-top: 32px;
+  border: 1px solid rgb(68, 0, 255);
+  width: 335px;
+  height: 566px;
+}
+
+.sub-bottom-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  border: 1px solid magenta;
+  width: 1080px;
+  height: 262px;
+}
+
+.sub-3nm-btn {
+  border: 1px solid rgb(68, 0, 255);
+  height: 262px;
+  width: 952px;
 }
