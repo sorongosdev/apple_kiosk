@@ -5,10 +5,21 @@
   height: 1920px;
 }
 
-.sub-header {
+.sub-header-container {
   border: 5px solid red;
   width: 1080px;
   height: 150px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sub-header-container span {
+  width: 200px;
+  height: 150px;
+  font-size: 32px;
+  border: 1px solid blue;
+  text-align: center;
+  line-height: 150px;
 }
 
 .sub-btn-section {
