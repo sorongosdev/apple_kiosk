@@ -160,4 +160,16 @@
   border: 1px solid rgb(68, 0, 255);
   height: 262px;
   width: 952px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.sub-3nm-sub-txt {
+  font-size: 36px;
+}
+
+.sub-3nm-main-txt {
+  font-size: 76px;
 }
