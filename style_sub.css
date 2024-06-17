@@ -37,10 +37,52 @@
   height: 441px;
 }
 
-.sub-than-m2-btn {
+.sub-compare-btn {
   height: 441px;
   width: 952px;
   border: 1px solid magenta;
+}
+
+.sub-upto-txt {
+  border: 1px solid red;
+  margin-top: 32px;
+  font-size: 36px;
+  text-align: center;
+}
+
+.sub-spec-container {
+  border: 1px solid blue;
+  height: 191px;
+  margin-top: 38px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.sub-spec-col {
+  border: 1px solid red;
+  width: 300px;
+  position: relative;
+}
+
+.sub-spec-grad-txt {
+  border: 1px solid blue;
+  height: 80%;
+  font-size: 110px;
+  text-align: center;
+}
+
+.sub-spec-desc-txt {
+  border: 1px solid green;
+  height: 19%;
+  font-size: 23px;
+  text-align: center;
+}
+
+.sub-than-m2-txt {
+  border: 1px solid red;
+  text-align: center;
+  margin-top: 48px;
+  font-size: 36px;
 }
 
 .sub-middle-container {
