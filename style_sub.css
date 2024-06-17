@@ -43,6 +43,14 @@
   border: 1px solid blue;
   text-align: center;
   line-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-header-logo {
+  border: 1px solid red;
+  display: block;
 }
 
 .sub-btn-section {
