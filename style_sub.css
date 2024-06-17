@@ -207,6 +207,12 @@
   flex-direction: column;
   text-align: center;
   justify-content: center;
+
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url("images/sub_3nm_img.png"), black; /* 기본 검은색 배경 */
+
+  background-size: cover; /* 배경 이미지가 요소를 덮도록 설정 */
+  background-blend-mode: normal; /* 배경 블렌드 모드를 설정 */
 }
 
 .sub-3nm-sub-txt {
