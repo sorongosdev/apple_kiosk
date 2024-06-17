@@ -20,266 +20,34 @@
   font-style: normal;
 }
 
+@font-face {
+    font-family: "AppleSDGothicNeoR";
+    src: url("./fonts/AppleSDGothicNeoR.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: "AppleSDGothicNeoB";
+    src: url("./fonts/AppleSDGothicNeoB.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 * {
   margin: 0;
   padding: 0;
 }
 
-a {
-  text-decoration: none;
-}
-
-a:visited {
-  color: white;
-}
-
-ul {
-  list-style: none;
-}
-
-.landing-frame {
-  width: 1080px;
-  height: 1920px;
-  background-color: rgb(28, 36, 37);
-  background-image: url("images/ashe-bob.png");
-
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.frame {
-  width: 1080px;
-  height: 1920px;
-  background-image: url("images/alpha_hochi.png");
-  background-size: 15%;
-  background-repeat: repeat;
-  background-color: #1c1c1c;
-}
-
-.main-top-nav {
-  position: relative;
-  border: 1px solid red;
-}
-
-.main-top-nav i {
-  color: white;
-  width: 54px;
-  height: 54px;
-}
-
-footer {
-  position: absolute;
-  width: 100%;
-  bottom: 10px;
-  color: #999;
-  text-align: center;
-  /* background-color: rgba(189, 164, 23, 0.1); */
-}
-
-footer h3 {
-  padding: 3px;
-}
-
-footer p {
-  padding: 2px;
-}
-
-/* Landing page */
-.landing-vid {
-  position: absolute;
-  width: 1080px;
-  height: 1920px;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-}
-
-.landing-main {
-  position: relative;
-  top: 80%;
-  text-align: center;
-  /* border: 1px solid red; */
-}
-
-.landing-main p {
-  /* font-family: "Noto Sans KR", sans-serif; */
-  font-family: "AppleSDGothicNeoL", sans-serif;
-  font-size: 40pt;
-  /* border: 1px solid blue; */
-}
-
-/* Main Page */
-/* Header */
-.main-vid {
-  width: 1080px;
-  height: 500px;
-  object-fit: cover;
-}
-
-.indicator {
-  text-align: center;
-}
-
-.main-headline {
-  font-family: "Noto Sans KR", sans-serif;
-  color: aliceblue;
-  text-align: center;
-}
-
-.main-headline h2 {
-  width: 300px;
-  font-size: 32pt;
-  font-weight: 500;
-  margin: 0 auto;
-  margin-top: 38px;
-  padding-top: 24px;
-  border-top: 1px solid #333;
-  text-shadow: 5px 5px 5px black;
-}
-
-.main-headline h3 {
-  font-size: 18pt;
-  font-weight: 200;
-  padding-top: 16px;
-  text-shadow: 5px 5px 5px black;
-}
-
-/* Navigation */
-main {
-  /* border: 1px dashed red; */
-}
-
-.main-section {
-  height: 360px;
-  margin-top: 36px;
-  background-size: 110%;
-  background-image: url("images/main_section_img.png");
-  background-repeat: no-repeat;
-  background-position: left top;
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: 100;
-  color: yellow;
-  text-shadow: 5px 5px 5px black;
-}
-
-.main-section p {
-  font-size: 16pt;
-  font-weight: 300;
-  padding: 40px 0 0 0;
-  text-align: center;
-}
-
-.main-nav {
-  width: 1020px;
-  margin: 0 auto;
-}
-
-.nav {
-  position: relative;
-  height: 300px;
-  box-sizing: border-box;
-  border: 2px solid #41412c;
-  border-radius: 32px;
-}
-
-.nav-1 {
-  position: relative;
-  width: 100%;
-  background-image: url("images/nav1_btn_img.png");
-  background-size: 105%;
-  background-position: center top 80%;
-  background-repeat: no-repeat;
-  /* 이미지 반복 없음 */
-}
-
-.nav-2 {
-  display: inline-block;
-  width: 500px;
-  margin: 0px 14px 0 0;
-  background-image: url("images/nav2_btn_img.png");
-  background-position: center left 10%;
-  background-size: cover;
-}
-
-.nav-3 {
-  display: inline-block;
-  width: 500px;
-  margin: 20px 0 0 0;
-  background-image: url("images/nav3_btn_img.png");
-  /* background-position: top 10%; */
-  background-size: 100%;
-  background-repeat: repeat;
-  /* background-size: ; */
-}
-
-.main-nav h2 {
-  position: absolute;
-  text-align: right;
-  width: 200px;
-  right: 20px;
-  bottom: 20px;
-  padding: 10px 20px;
-  color: white;
-  border-left: 2px solid wheat;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-.nav-logo {
-  display: inline-block;
-  margin: 0 auto;
-  /* border: 1px dashed red; */
-}
-
-.frame2 {
-  width: 1080px;
-  height: 1920px;
-  background-image: url("images/fire.png");
-  background-size: 300%;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.sub2-bottom {
-  text-align: center;
-  animation: shake 1s ease-in-out infinite;
-  /* 0.5초 동안 무한 반복 */
-}
-
-/* 흔들리는 애니메이션 정의 */
-@keyframes shake {
-  0% {
-    transform: translateX(0);
-  }
-
-  25% {
-    transform: translateX(-10px) translateY(10px);
-  }
-
-  50% {
-    transform: translateX(10px) translateY(10px);
-  }
-
-  75% {
-    transform: translateX(-10px);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-
 /* main */
-
-/* main */
-
-
 .main {
     background-color: rgba(255, 255, 255, 1);
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 1080px;
+    height: 1920px;
 }
 
 .div {
@@ -334,11 +102,11 @@ main {
     left: 0;
 }
 
-.EVENT {
+.event-text {
     position: absolute;
     top: 232px;
     left: 36px;
-    font-family: "AppleSDGothicNeoR00";
+    font-family: "AppleSDGothicNeoL";
     font-weight: 400;
     color: #ffffff;
     font-size: 40px;
@@ -377,7 +145,6 @@ main {
 
 .text {
     position: relative;
-    align-self: stretch;
     font-family: "AppleSDGothicNeoL";
     font-weight: 400;
     color: #ffffffb2;
@@ -415,6 +182,16 @@ main {
     height: 330px;
     top: 0px;
     left: 324px;
+}
+
+.stage-text{
+    position: absolute;
+    color: #ffffffb2;
+    text-align: center;
+    font-family: "AppleSDGothicNeoL";
+    font-size: 40px;
+    bottom: 0;
+    right: 0;
 }
 
 .indicator {
@@ -465,19 +242,14 @@ main {
     display: flex;
     flex-direction: column;
     align-items : flex-start;
-    gap: 11px;
+    gap: 20px;
 }
   
-.span-wrapper{
-    font-family: "AppleSDGothicNeoB00";
-    color: #ffffff;
-    font-size: 40px;
-    letter-spacing: 0;
-    }
+
   
 .span {
-    font-family: "AppleSDGothicNeoB00";
-    font-weight: 400;
+    font-family: "AppleSDGothicNeoB";
+
     color: #ffffff;
     font-size: 40px;
     letter-spacing: 0;
@@ -493,7 +265,7 @@ main {
     color: #ffffff;
     font-size: 86px;
     letter-spacing: 0;
-    line-height: 86px;
+    line-height: 80px;
     white-space: nowrap;
 }
   
