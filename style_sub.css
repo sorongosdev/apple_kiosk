@@ -224,9 +224,20 @@
   box-shadow: 0px -36px 30px rgba(35, 30, 106, 0.5),
     0px 36px 30px rgba(183, 187, 138, 0.5),
     inset 0px 0px 11.3px 12px rgba(255, 255, 255, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-m4-btn img {
+  /* border: 1px solid red; */
+  height: 86px;
+  margin-right: 12px;
+  margin-bottom: -6px;
 }
 
 .sub-m4-btn span {
+  position: relative;
   /* border: 1px solid red; */
 }
 
