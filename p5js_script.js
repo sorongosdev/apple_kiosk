@@ -1,11 +1,11 @@
 let sketch = function(p) {
   let windows;
-  let currentIndex = 1; // Adjust starting index for the clone
+  let currentIndex = 1;
   let startX;
   let endX;
   let offsetX = 0;
   let targetOffsetX = 0;
-  let lerpSpeed = 0.05; // 더 부드러운 애니메이션을 위해 속도 조정
+  let lerpSpeed = 0.05;
   let cardWidth;
   let totalWidth;
   let cloneFirst, cloneLast;
@@ -16,9 +16,9 @@ let sketch = function(p) {
     windows = document.querySelectorAll('.window');
     if (windows.length > 0) {
       cardWidth = windows[0].offsetWidth;
-      totalWidth = cardWidth * (windows.length + 2); // Adjusted for clones
+      totalWidth = cardWidth * (windows.length + 2);
 
-      // 클론을 만들어서 양쪽에 붙임
+
       cloneFirst = windows[0].cloneNode(true);
       cloneLast = windows[windows.length - 1].cloneNode(true);
       cloneFirst.classList.add('clone');
@@ -26,7 +26,7 @@ let sketch = function(p) {
       windows[0].parentNode.appendChild(cloneFirst);
       windows[0].parentNode.insertBefore(cloneLast, windows[0]);
 
-      windows = document.querySelectorAll('.window'); // Update the windows list to include clones
+      windows = document.querySelectorAll('.window');
       offsetX = targetOffsetX = currentIndex * cardWidth;
     }
     updateCarousel();
@@ -57,10 +57,8 @@ let sketch = function(p) {
     let swipeDistance = endX - startX;
 
     if (swipeDistance > 50) {
-      // 오른쪽으로 스와이프
       currentIndex = currentIndex - 1;
     } else if (swipeDistance < -50) {
-      // 왼쪽으로 스와이프
       currentIndex = currentIndex + 1;
     }
 
@@ -95,14 +93,14 @@ let sketch = function(p) {
         currentIndex = windows.length - 2;
         offsetX = targetOffsetX = currentIndex * cardWidth;
         isTransitioning = false;
-      }, 200); // 인덱스 재설정 후 즉시 offset 조정
+      }, 200);
     } else if (currentIndex === windows.length - 1) {
       isTransitioning = true;
       setTimeout(() => {
         currentIndex = 1;
         offsetX = targetOffsetX = currentIndex * cardWidth;
         isTransitioning = false;
-      }, 200); // 인덱스 재설정 후 즉시 offset 조정
+      }, 200);
     }
   }
 

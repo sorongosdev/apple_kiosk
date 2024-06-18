@@ -268,12 +268,10 @@ body {
     border-radius: 52px;
     transition: transform 0.1s ease;
     flex-shrink: 0;
-    border: 1px solid red;
 }
 
 .carousel {
     margin-top: 150px;
-    border: 1px solid blue;
     overflow: hidden;
     position: relative;
     height: 937px;
