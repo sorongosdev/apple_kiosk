@@ -224,9 +224,11 @@ body {
 }
 
 .window {
+    margin-top: 150px;
     border: 1px solid red;
     position: absolute;
     width: 1016px;
+    width: 100%;
     height: 937px;
     border-radius: 52px;
     transition: transform 0.2s ease;
