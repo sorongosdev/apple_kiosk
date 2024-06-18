@@ -5,10 +5,11 @@ let sketch = function(p) {
   let endX;
   let offsetX = 0;
   let targetOffsetX = 0;
-  let lerpSpeed = 0.1;
+  let lerpSpeed = 0.05; // 더 부드러운 애니메이션을 위해 속도 조정
   let cardWidth;
   let totalWidth;
   let cloneFirst, cloneLast;
+  let isTransitioning = false;
 
   p.setup = function() {
     p.noCanvas();
@@ -89,11 +90,21 @@ let sketch = function(p) {
 
   function checkInfiniteScroll() {
     if (currentIndex === 0) {
+      isTransitioning = true;
       currentIndex = windows.length - 2;
-      offsetX = targetOffsetX = currentIndex * cardWidth;
+      targetOffsetX = currentIndex * cardWidth;
+      setTimeout(() => {
+        offsetX = targetOffsetX = currentIndex * cardWidth;
+        isTransitioning = false;
+      }, 600); // 600ms로 수정
     } else if (currentIndex === windows.length - 1) {
+      isTransitioning = true;
       currentIndex = 1;
-      offsetX = targetOffsetX = currentIndex * cardWidth;
+      targetOffsetX = currentIndex * cardWidth;
+      setTimeout(() => {
+        offsetX = targetOffsetX = currentIndex * cardWidth;
+        isTransitioning = false;
+      }, 400); // 600ms로 수정
     }
   }
 
