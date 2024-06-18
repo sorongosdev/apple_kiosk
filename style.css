@@ -260,21 +260,21 @@ body {
 }
 
 .window {
-    margin-top: 150px;
     position: absolute;
-    width: 1016px;
     width: 100%;
     height: 937px;
     border-radius: 52px;
     transition: transform 0.2s ease;
     flex-shrink: 0;
+    border: 1px solid red;
 }
 
 .carousel {
+    margin-top: 150px;
     border: 1px solid blue;
-    display: flex;
     overflow: hidden;
-    width: 100%;
+    position: relative; 
+    height: 937px;
 }
 
 
