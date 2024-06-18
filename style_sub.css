@@ -136,25 +136,27 @@
 }
 
 .sub-tracing-btn {
-  /* border: 1px solid sienna; */
-  width: 585px;
+  /* width: 585px;
   height: 898px;
   font-size: 56px;
-  /* Background layers */
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
     url("images/sub_tracing_img.png"), black;
-  /* 기본 검은색 배경 */
 
   background-size: cover;
-  /* 배경 이미지가 요소를 덮도록 설정 */
-  background-blend-mode: normal;
-  /* 배경 블렌드 모드를 설정 */
+  background-blend-mode: normal; */
+
+  position: relative;
+  margin-top: 32px;
+  width: 335px;
+  height: 566px;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url("images/sub_tracing_img.png"), black;
 }
 
 .sub-tracing-txt {
   /* border: 1px solid red; */
-  height: 240px;
-  margin: 40px;
+  margin: 32px 0 0 32px;
+  font-size: 40px;
 }
 
 .sub-middle-column {
@@ -193,14 +195,13 @@
 }
 
 .sub-oled-btn {
-  position: relative;
-  margin-top: 32px;
-  /* border: 1px solid red; */
-  width: 335px;
-  height: 566px;
+  width: 585px;
+  height: 898px;
+  background-size: cover;
+  background-blend-mode: normal;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .sub-vid {
@@ -213,8 +214,9 @@
 
 .sub-oled-txt {
   font-size: 40px;
-  text-align: center;
-  /* border: 1px solid red; */
+  font-size: 56px;
+  height: 240px;
+  margin: 40px;
 }
 
 .sub-bottom-container {
