@@ -68,6 +68,8 @@ body {
     width: 1080px;
     color: white;
     z-index: 10;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+
 }
 
 /* 
@@ -273,7 +275,7 @@ body {
     margin-top: 150px;
     border: 1px solid blue;
     overflow: hidden;
-    position: relative; 
+    position: relative;
     height: 937px;
 }
 
