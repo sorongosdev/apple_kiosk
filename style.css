@@ -537,7 +537,7 @@ body {
     left: 0;
 }
 
-.Sm-flexcontaine .text {
+.Sm-flexcontainer .text {
     position: relative;
     font-family: "AppleSDGothicNeoB";
     font-size: 40px;
@@ -546,7 +546,7 @@ body {
 
 }
 
-.Sm-flexcontaine .text-wrapper {
+.Sm-flexcontainer .text-wrapper {
     font-family: "AppleSDGothicNeoB";
     line-height: 60px;
 
