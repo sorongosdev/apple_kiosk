@@ -294,7 +294,7 @@ body{
     object-fit: cover;
 }
     
-.MAIN-NAV {
+.main-nav {
     position: absolute;
     width: 1080px;
     height: 150px;
@@ -536,7 +536,7 @@ line-height: normal;
     left: 0;
 }
 
-.Sm-flexcontaine .text {
+.Sm-flexcontainer .text {
     position: relative;
     font-family: "AppleSDGothicNeoB";
     font-size: 40px;
@@ -545,7 +545,7 @@ line-height: normal;
 
 }
 
-.Sm-flexcontaine .text-wrapper {
+.Sm-flexcontainer .text-wrapper {
     font-family: "AppleSDGothicNeoB";
     line-height: 60px;
 
