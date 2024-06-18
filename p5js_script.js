@@ -6,12 +6,14 @@ let offsetX = 0;
 let targetOffsetX = 0;
 let lerpSpeed = 0.1;
 let cardWidth;
+let totalWidth;
 
 function setup() {
   createCanvas(400, 400);  // p5.js canvas 생성
   windows = document.querySelectorAll('.window');
   if (windows.length > 0) {
     cardWidth = windows[0].offsetWidth; // 첫 번째 카드의 너비를 가져옴
+    totalWidth = cardWidth * windows.length;
   }
   updateCarousel();
 }
@@ -32,10 +34,10 @@ function touchEnded() {
 
   if (swipeDistance > 50) {
     // 오른쪽으로 스와이프
-    currentIndex = Math.max(0, currentIndex - 1);
+    currentIndex = (currentIndex - 1 + windows.length) % windows.length;
   } else if (swipeDistance < -50) {
     // 왼쪽으로 스와이프
-    currentIndex = Math.min(windows.length - 1, currentIndex + 1);
+    currentIndex = (currentIndex + 1) % windows.length;
   }
 
   targetOffsetX = currentIndex * cardWidth; // 카드의 너비만큼 이동
@@ -45,8 +47,17 @@ function touchEnded() {
 
 function updateCarousel() {
   windows.forEach((window, index) => {
-    let offset = index * cardWidth - offsetX;
-    window.style.transform = `translateX(${offset}px)`;
+    let realIndex = (index - currentIndex + windows.length) % windows.length;
+    let offset = (realIndex - currentIndex) * cardWidth - offsetX;
+    
+    if (offset > totalWidth / 2) {
+      offset -= totalWidth;
+    } else if (offset < -totalWidth / 2) {
+      offset += totalWidth;
+    }
+    
+    window.style.position = 'absolute';
+    window.style.left = `${offset}px`;
   });
 }
 
@@ -69,6 +80,7 @@ function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
   if (windows.length > 0) {
     cardWidth = windows[0].offsetWidth;
+    totalWidth = cardWidth * windows.length;
   }
   targetOffsetX = currentIndex * cardWidth; // 창 크기 변경 시 목표 위치 갱신
 }

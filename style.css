@@ -225,7 +225,7 @@ body {
 
 .window {
     border: 1px solid red;
-    position: relative;
+    position: absolute;
     width: 1016px;
     height: 937px;
     border-radius: 52px;
