@@ -297,49 +297,39 @@ body {
 .main-nav {
     position: absolute;
     width: 1080px;
-    height: 150px;
+    height: 160px;
     top: 0;
     left: 0;
 }
 
-.group-wrapper {
-    height: 140px;
-}
 
 .group {
     position: relative;
-    width: 1018px;
-    height: 75px;
-    top: 39px;
-    left: 32px;
+    width: 984px;
+    top: 48px;
+    left: 48px;
 }
 
 .icon-ionicons {
     position: absolute;
-    width: 62px;
+    width: 62px; 
     height: 70px;
-    top: 1px;
-    left: 0;
+    top: -8px;
 }
 
 .solar-figma-bold {
     position: absolute;
     width: 62px;
     height: 62px;
-    top: 5px;
-    left: 954px;
+    left: 922px;
 }
 
 .text-wrapper-2 {
     position: absolute;
-    height: 75px;
-    top: 10px;
-    left: 86px;
-    font-family: "AppleSDGothicNeoEB00";
+    left: 90px;
+    font-family: "AppleSDGothicNeoEB";
     color: #ffffff;
     font-size: 52px;
-    letter-spacing: 0;
-    line-height: normal;
 }
 
 .mask-group {
