@@ -41,6 +41,11 @@
     padding: 0;
   }
   
+body{
+    width: 1080px;
+    height: 1920px;
+}
+
   /* main */
   .main {
       background-color: rgba(255, 255, 255, 1);
@@ -60,11 +65,12 @@
   }
   
   .sub-btn-box {
-      position: absolute;
-      width: 1016px;
-      height: 654px;
-      top: 1199px;
-      left: 32px;
+        position: absolute;
+        width: 1016px;
+        height: 654px;
+        top: 1199px;
+        left: 32px;
+        transition: transform 0.5s ease;
   }
     
   .event-box {
@@ -224,8 +230,16 @@
       top: 150px;
       left: 32px;
       border-radius: 52px;
+      transition: transform 0.2s ease;
+      
   }
-    
+
+  .carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+  }
+
    .main-pencil-box {
       position: absolute;
       width: 667px;
