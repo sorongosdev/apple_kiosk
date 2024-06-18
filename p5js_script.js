@@ -1,6 +1,6 @@
 let sketch = function(p) {
   let windows;
-  let currentIndex = 0;
+  let currentIndex = 1; // Adjust starting index for the clone
   let startX;
   let endX;
   let offsetX = 0;
@@ -27,16 +27,16 @@ let sketch = function(p) {
       windows[0].parentNode.insertBefore(cloneLast, windows[0]);
 
       windows = document.querySelectorAll('.window'); // Update the windows list to include clones
-      currentIndex = 1; // Adjust starting index for the clone
       offsetX = targetOffsetX = currentIndex * cardWidth;
     }
     updateCarousel();
   }
 
   p.draw = function() {
-    offsetX = p.lerp(offsetX, targetOffsetX, lerpSpeed);
+    if (!isTransitioning) {
+      offsetX = p.lerp(offsetX, targetOffsetX, lerpSpeed);
+    }
     updateCarousel();
-    console.log("Current Index: " + currentIndex);
   }
 
   p.touchStarted = function() {
@@ -91,20 +91,18 @@ let sketch = function(p) {
   function checkInfiniteScroll() {
     if (currentIndex === 0) {
       isTransitioning = true;
-      currentIndex = windows.length - 2;
-      targetOffsetX = currentIndex * cardWidth;
       setTimeout(() => {
+        currentIndex = windows.length - 2;
         offsetX = targetOffsetX = currentIndex * cardWidth;
         isTransitioning = false;
-      }, 600); // 600ms로 수정
+      }, 200); // 인덱스 재설정 후 즉시 offset 조정
     } else if (currentIndex === windows.length - 1) {
       isTransitioning = true;
-      currentIndex = 1;
-      targetOffsetX = currentIndex * cardWidth;
       setTimeout(() => {
+        currentIndex = 1;
         offsetX = targetOffsetX = currentIndex * cardWidth;
         isTransitioning = false;
-      }, 400); // 600ms로 수정
+      }, 200); // 인덱스 재설정 후 즉시 offset 조정
     }
   }
 
