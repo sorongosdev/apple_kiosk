@@ -1,3 +1,4 @@
+let sketch = function(p) {
   let windows;
   let currentIndex = 0;
   let startX;
@@ -5,61 +6,108 @@
   let offsetX = 0;
   let targetOffsetX = 0;
   let lerpSpeed = 0.1;
-  
-  function setup() {
-    noCanvas();
+  let cardWidth;
+  let totalWidth;
+  let cloneFirst, cloneLast;
+
+  p.setup = function() {
+    p.noCanvas();
     windows = document.querySelectorAll('.window');
+    if (windows.length > 0) {
+      cardWidth = windows[0].offsetWidth;
+      totalWidth = cardWidth * (windows.length + 2); // Adjusted for clones
+
+      // 클론을 만들어서 양쪽에 붙임
+      cloneFirst = windows[0].cloneNode(true);
+      cloneLast = windows[windows.length - 1].cloneNode(true);
+      cloneFirst.classList.add('clone');
+      cloneLast.classList.add('clone');
+      windows[0].parentNode.appendChild(cloneFirst);
+      windows[0].parentNode.insertBefore(cloneLast, windows[0]);
+
+      windows = document.querySelectorAll('.window'); // Update the windows list to include clones
+      currentIndex = 1; // Adjust starting index for the clone
+      offsetX = targetOffsetX = currentIndex * cardWidth;
+    }
     updateCarousel();
   }
-  
-  function draw() {
-    // 부드러운 전환을 위한 위치 보정
-    offsetX = lerp(offsetX, targetOffsetX, lerpSpeed);
+
+  p.draw = function() {
+    offsetX = p.lerp(offsetX, targetOffsetX, lerpSpeed);
     updateCarousel();
+    console.log("Current Index: " + currentIndex);
   }
-  
-  function touchStarted() {
-    startX = mouseX;
+
+  p.touchStarted = function() {
+    if (p.touches.length > 0) {
+      startX = p.touches[0].x;
+    } else {
+      startX = p.mouseX;
+    }
     return false;
   }
-  
-  function touchEnded() {
-    endX = mouseX;
+
+  p.touchEnded = function() {
+    if (p.touches.length > 0) {
+      endX = p.touches[0].x;
+    } else {
+      endX = p.mouseX;
+    }
     let swipeDistance = endX - startX;
-  
+
     if (swipeDistance > 50) {
       // 오른쪽으로 스와이프
-      currentIndex = max(0, currentIndex - 1);
+      currentIndex = currentIndex - 1;
     } else if (swipeDistance < -50) {
       // 왼쪽으로 스와이프
-      currentIndex = min(windows.length - 1, currentIndex + 1);
+      currentIndex = currentIndex + 1;
     }
-  
-    targetOffsetX = currentIndex * windowWidth;
+
+    targetOffsetX = currentIndex * cardWidth;
     updateIndicators();
+    checkInfiniteScroll();
     return false;
   }
-  
+
   function updateCarousel() {
     windows.forEach((window, index) => {
-      let offset = index * windowWidth - offsetX;
+      let offset = index * cardWidth - offsetX;
       window.style.transform = `translateX(${offset}px)`;
     });
   }
-  
+
   function updateIndicators() {
     const dots = document.querySelectorAll('.dot');
     dots.forEach((dot, index) => {
-      if (index === currentIndex) {
+      if (index === (currentIndex - 1 + windows.length - 2) % (windows.length - 2)) {
         dot.classList.add('active');
       } else {
         dot.classList.remove('active');
       }
     });
   }
-  
-  document.addEventListener('DOMContentLoaded', () => {
-    setup();
-    window.addEventListener('touchstart', touchStarted);
-    window.addEventListener('touchend', touchEnded);
-  });
+
+  function checkInfiniteScroll() {
+    if (currentIndex === 0) {
+      currentIndex = windows.length - 2;
+      offsetX = targetOffsetX = currentIndex * cardWidth;
+    } else if (currentIndex === windows.length - 1) {
+      currentIndex = 1;
+      offsetX = targetOffsetX = currentIndex * cardWidth;
+    }
+  }
+
+  p.windowResized = function() {
+    if (windows.length > 0) {
+      cardWidth = windows[0].offsetWidth;
+      totalWidth = cardWidth * windows.length;
+      targetOffsetX = currentIndex * cardWidth;
+    }
+  }
+
+  p.lerp = function(start, end, amt) {
+    return (1 - amt) * start + amt * end;
+  }
+}
+
+new p5(sketch, 'sketch');
