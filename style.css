@@ -34,8 +34,6 @@
     font-style: normal;
 }
 
-
-
 * {
     margin: 0;
     padding: 0;
@@ -46,6 +44,13 @@ body {
     height: 1920px;
 }
 
+.landing-frame {
+    display: relative;
+    width: 1080px;
+    height: 1920px;
+    text-align: center;
+}
+
 .landing-vid {
     position: absolute;
     width: 1080px;
@@ -53,21 +58,29 @@ body {
     top: 0;
     left: 0;
     object-fit: cover;
-  }
-  
-  .landing-main {
-    position: relative;
-    top: 80%;
-    text-align: center;
-  }
-  
-  .landing-main p {
-    margin-top: 1400px;
+}
+
+
+.landing-txt {
+    font-size: 40pt;
+    top: 1400px;
+    position: absolute;
+    width: 1080px;
+    color: white;
+    z-index: 10;
+}
+
+/* 
+#landing-txt {
+    position: absolute;
+    border: 1px solid red;
+    top: 1400px;
     font-family: "AppleSDGothicNeoL", sans-serif;
     font-size: 40pt;
     color: #ffffff;
-  }
-  
+    text-decoration: none;
+} */
+
 
 /* main */
 .main {
