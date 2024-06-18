@@ -6,6 +6,41 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "AppleSDGothicNeoEB";
+  src: url("./fonts/AppleSDGothicNeoEB.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AppleSDGothicNeoH";
+  src: url("./fonts/AppleSDGothicNeoH.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AppleSDGothicNeoL";
+  src: url("./fonts/AppleSDGothicNeoL.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AppleSDGothicNeoR";
+  src: url("./fonts/AppleSDGothicNeoR.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AppleSDGothicNeoB";
+  src: url("./fonts/AppleSDGothicNeoB.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* sub-page */
 .sub-frame {
   color: white;
@@ -114,6 +149,7 @@
 
 .sub-spec-desc-txt {
   /* border: 1px solid green; */
+  font-family: "AppleSDGothicNeoR";
   height: 19%;
   font-size: 23px;
   text-align: center;
