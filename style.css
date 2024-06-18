@@ -46,6 +46,29 @@ body {
     height: 1920px;
 }
 
+.landing-vid {
+    position: absolute;
+    width: 1080px;
+    height: 1920px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+  
+  .landing-main {
+    position: relative;
+    top: 80%;
+    text-align: center;
+  }
+  
+  .landing-main p {
+    margin-top: 1400px;
+    font-family: "AppleSDGothicNeoL", sans-serif;
+    font-size: 40pt;
+    color: #ffffff;
+  }
+  
+
 /* main */
 .main {
     background-color: rgba(255, 255, 255, 1);
