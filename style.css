@@ -294,7 +294,7 @@ body {
     object-fit: cover;
 }
 
-.MAIN-NAV {
+.main-nav {
     position: absolute;
     width: 1080px;
     height: 150px;
@@ -364,42 +364,6 @@ body {
     height: 687px;
     top: 0;
     left: 0;
-}
-
-.MAIN-NAV {
-    position: absolute;
-    width: 1080px;
-    height: 150px;
-    top: 0;
-    left: 0;
-}
-
-.group-wrapper {
-    height: 140px;
-}
-
-.group {
-    position: relative;
-    width: 1034px;
-    height: 70px;
-    top: 40px;
-    left: 24px;
-}
-
-.icon-ionicons {
-    position: absolute;
-    width: 62px;
-    height: 70px;
-    top: 0;
-    left: 0;
-}
-
-.solar-figma-bold {
-    position: absolute;
-    width: 62px;
-    height: 62px;
-    top: 5px;
-    left: 954px;
 }
 
 /* 2 */
