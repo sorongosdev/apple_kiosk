@@ -224,21 +224,22 @@ body {
 }
 
 .window {
-    position: absolute;
+    border: 1px solid red;
+    position: relative;
     width: 1016px;
     height: 937px;
-    top: 150px;
-    left: 32px;
     border-radius: 52px;
     transition: transform 0.2s ease;
-
+    flex-shrink: 0;
 }
 
 .carousel {
+    border: 1px solid blue;
     display: flex;
     overflow: hidden;
     width: 100%;
 }
+
 
 .main-pencil-box {
     position: absolute;
