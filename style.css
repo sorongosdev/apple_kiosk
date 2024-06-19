@@ -850,10 +850,21 @@ body {
 
 .sub-3nm-sub-txt {
   font-size: 36px;
+  position: absolute;
+  top: 42px;
 }
 
 .sub-3nm-main-txt {
   font-size: 76px;
+  position: absolute;
+  top: 104px;
+}
+
+.sub-magnify-img {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  /* display: none; */
 }
 
 .sub-3nm-overlay-txt {
