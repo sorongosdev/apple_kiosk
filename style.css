@@ -248,8 +248,8 @@ body {
   text-align: center;
   font-family: "AppleSDGothicNeoL";
   font-size: 40px;
-  bottom: 0;
-  right: 0;
+  bottom: 16px;
+  right: 16px;
 }
 
 .indicator {
