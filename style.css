@@ -228,7 +228,7 @@ body {
 .m4-box {
   width: 329.998px;
   height: 330px;
-  background-image: url(images/sub_m4_img.svg);
+  background-image: url(images/sub_m4_img2.png);
   background-repeat: no-repeat;
 }
 
@@ -724,7 +724,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 31px; 
+  margin-left: 31px;
   /* border: 1px solid rgb(68, 0, 255); */
   width: 335px;
   height: 898px;
