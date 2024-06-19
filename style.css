@@ -238,6 +238,8 @@ body {
   height: 330px;
   top: 0px;
   left: 324px;
+  box-shadow: 4px 4px 8px #00000080;
+  border-radius: 52px;
 }
 
 .stage-text {
@@ -722,7 +724,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 31px;
+  margin-left: 31px; 
   /* border: 1px solid rgb(68, 0, 255); */
   width: 335px;
   height: 898px;
