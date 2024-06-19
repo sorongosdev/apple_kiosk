@@ -179,6 +179,7 @@ body {
   top: 0;
   left: 0;
   box-shadow: 10px 10px 16px #00000040;
+  border-radius: 52px;
 }
 
 .flexcontainer-wrapper {
